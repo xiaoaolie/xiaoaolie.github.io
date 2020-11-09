@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="xiaoaolie">
   <meta name="keywords" content="">
-  <title>我的第一篇博客文章 - xiaoaolie</title>
+  <title>测试文章 - xiaoaolie</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -172,8 +172,8 @@
               
   <div class="mt-3 post-meta">
     <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-    <time datetime="2020-11-04 15:36" pubdate>
-      November 4, 2020 pm
+    <time datetime="2020-11-09 14:08" pubdate>
+      November 9, 2020 pm
     </time>
   </div>
 
@@ -183,7 +183,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      0 字
+      242 字
     </span>
   
 
@@ -193,7 +193,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      2
        分钟
     </span>
   
@@ -227,10 +227,12 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">我的第一篇博客文章</h1>
+            <h1 style="display: none">测试文章</h1>
             
             <div class="markdown-body" id="post-body">
-              
+              <h2 id="Idea连接mysql遇到的问题"><a href="#Idea连接mysql遇到的问题" class="headerlink" title="Idea连接mysql遇到的问题"></a>Idea连接mysql遇到的问题</h2><p>如果Idea提示如下讯息<br><strong>1.Server returns invalid timezone. Go to ‘Advanced’ tab and set ‘serverTimezone’ property manually.</strong><br>那么小伙伴的安装mysql的时候肯定没有改变时区。<br>这句话的意思是:<br>服务器返回无效时区。转到“高级”选项卡并手动设置“serverTimezone”属性。<br>需要去设置mysql的时区.<br>所以打开CMD 输入<strong>mysql -hlocalhost -uroot -p</strong><br>打开mysql，如果没有提示没有这个命令，说明小伙伴没有配置环境变量。<br>在mysql输入 ：<br><strong>show variables like ‘%time_zone’;</strong>  <strong>记得加分号哦！</strong><br><img src="https://img-blog.csdnimg.cn/202009211459216.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21hbG9uZ2xvbmcxNDEz,size_16,color_FFFFFF,t_70#pic_center" srcset="/img/loading.gif" alt="在这里插入图片描述"><br>我的显示的是SYSTEM，意思就是没有设置时区。</p>
+<p><strong>设置时区命令:set time_zone = ‘+8:00’;</strong><br><img src="https://img-blog.csdnimg.cn/20200921150111635.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21hbG9uZ2xvbmcxNDEz,size_16,color_FFFFFF,t_70#pic_center" srcset="/img/loading.gif" alt="在这里插入图片描述"><br>成功，那我们再来看下状态。<br><img src="https://img-blog.csdnimg.cn/202009211501490.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21hbG9uZ2xvbmcxNDEz,size_16,color_FFFFFF,t_70#pic_center" srcset="/img/loading.gif"><br>现在显示已经修改成功了！<br>Idea测试一下！<br><img src="https://img-blog.csdnimg.cn/20200921150358661.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21hbG9uZ2xvbmcxNDEz,size_16,color_FFFFFF,t_70#pic_center" srcset="/img/loading.gif"><br>出现这个提示点击下载就可以了，idea会下载你连接mysql需要的jar包。<br><img src="https://img-blog.csdnimg.cn/20200921150707178.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21hbG9uZ2xvbmcxNDEz,size_16,color_FFFFFF,t_70#pic_center" srcset="/img/loading.gif" alt="在这里插入图片描述"><br>测试成功！<br><img src="https://img-blog.csdnimg.cn/20200921151445980.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21hbG9uZ2xvbmcxNDEz,size_16,color_FFFFFF,t_70#pic_center" srcset="/img/loading.gif" alt="在这里插入图片描述"><br><strong>记得点赞加评论哦，如果有错误欢迎指出来！</strong></p>
+
             </div>
             <hr>
             <div>
@@ -246,15 +248,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/11/05/hello-world/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Hello World</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2020/11/05/hello-world/">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
@@ -390,7 +392,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "我的第一篇博客文章&nbsp;",
+        "测试文章&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
